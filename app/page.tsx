@@ -1,103 +1,179 @@
+"use client";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  ArrowRight,
+  Calendar,
+  ChevronRight,
+  MapPin,
+  Mic,
+  Users,
+} from "lucide-react";
+import { CountdownTimer } from "@/components/countdown-timer";
+import { EventCard } from "@/components/events/event-card";
+import { SpeakerCard } from "@/components/speaker-card";
+import { SponsorShowcase } from "@/components/sponsor-showcase";
+import { Footer } from "@/components/footer";
+import { HeroParticles } from "@/components/hero-particles";
+import Preloader from "@/components/Redirect";
+import { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "motion/react";
+import Hero from "@/components/hero/Hero";
+import About from "@/components/about/About";
+import Events from "@/components/events/Events";
+import Speakers from "@/components/speakers/Speakers";
+import Registration from "@/components/registration/Registration";
+import Sponsors from "@/components/sponsor/Sponsors";
+import FAQ from "@/components/faq/FAQ";
+import NewsLetter from "@/components/newsletter/NewsLetter";
+
 import Image from "next/image";
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+  // Festival date - set to 3 months from now
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+  const [loading, setLoading] = useState(true);
+
+  return (
+    <>
+      {loading ? (
+        <Preloader
+          text="Back to the Future"
+          minLoadingTime={2000}
+          onLoadingComplete={() => setLoading(false)}
+        />
+      ) : (
+        <>
+          <AnimatePresence>
+            <motion.div
+              initial={{ y: 10, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -10, opacity: 0 }}
+              transition={{ duration: 0.1 }}
+              className="sticky top-3 z-30 flex justify-between w-auto -mt-20 mx-7 lg:mx-20 rounded-xl bg-transparent backdrop-blur-sm border border-white text-white px-6 py-4 items-center hover:bg-white/15 transition-all"
+            >
+              <Link href={"/"}>
+                <Image
+                  src={"/ingenium.png"}
+                  width={125}
+                  height={31}
+                  alt="INGENIUM"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .querySelector("#hero")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                />
+              </Link>
+
+              <div className="flex items-center space-x-4">
+                <Link
+                  href="#events"
+                  className="flex items-center bg-white font-semibold text-black px-4 py-1 rounded-lg hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1 transition-all group"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    document
+                      .querySelector("#events")
+                      ?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                >
+                  Register now
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="hidden md:block ml-2 w-6 h-6 group-hover:translate-x-2 transition-all"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </motion.div>
+          </AnimatePresence>
+          <div className="min-h-screen bg-black text-white overflow-hidden">
+            <AnimatePresence>
+              <motion.div
+                initial={{ y: 20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                exit={{ y: -20, opacity: 0 }}
+                transition={{ duration: 0.4 }}
+              >
+                {/* Hero Section */}
+                <section
+                  id="hero"
+                  className="relative h-screen flex items-center justify-center overflow-hidden"
+                >
+                  <Hero />
+                </section>
+
+                {/* About Section */}
+                <section
+                  id="about"
+                  className="relative py-24 bg-gradient-to-b from-black to-purple-950/30"
+                >
+                  <About />
+                </section>
+
+                {/* Events Section */}
+                <section
+                  id="events"
+                  className="py-24 bg-gradient-to-b from-purple-950/30 to-black"
+                >
+                  <Events />
+                </section>
+
+                {/* Speakers Section */}
+                <section
+                  id="speakers"
+                  className="py-24 bg-gradient-to-b from-black to-blue-950/30"
+                >
+                  <Speakers />
+                </section>
+
+                {/* Registration Section */}
+                <section
+                  id="register"
+                  className="py-24 bg-gradient-to-b from-blue-950/30 to-black relative overflow-hidden"
+                >
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(120,80,255,0.15),transparent_70%)]"></div>
+                  <Registration />
+                </section>
+
+                {/* Sponsors Section */}
+                <section
+                  id="sponsors"
+                  className="py-24 bg-gradient-to-b from-black to-purple-950/20"
+                >
+                  <Sponsors />
+                </section>
+
+                {/* FAQ Section */}
+                <section
+                  id="faq"
+                  className="py-24 bg-gradient-to-b from-purple-950/20 to-black"
+                >
+                  <FAQ />
+                </section>
+
+                {/* Newsletter Section */}
+                <section className="py-24 bg-gradient-to-r from-purple-900/30 to-blue-900/30 relative">
+                  <div className="absolute inset-0 bg-black/50"></div>
+                  <NewsLetter />
+                </section>
+
+                <Footer />
+              </motion.div>
+            </AnimatePresence>
+          </div>
+        </>
+      )}
+    </>
   );
 }
