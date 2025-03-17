@@ -14,13 +14,15 @@ export default function Hero() {
         {/* <div className="mb-10 inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-sm font-medium tracking-wider uppercase">
           Coming Soon
         </div> */}
-        <p className="text-3xl md:text-4xl font-black -mb-0">
-          Guru Nanank Institute of Technology
-        </p>
-        <p className="text-xl md:text-2xl font-bold mt-1">
-          Department of Electronics & Computer Science
-        </p>
-        <p className="text-xl font-normal -mt-1">Presents</p>
+        <div className="px-4">
+          <p className="text-gray-400 text-3xl md:text-4xl font-black md:-mb-0">
+            Guru Nanank Institute of Technology
+          </p>
+          <p className="text-xl md:text-2xl font-bold mt-2 md:mt-1">
+            Department of Electronics & Computer Science
+          </p>
+        </div>
+        <p className="text-gray-400 md:text-xl font-bold -mt-1">Presents</p>
         <Image
           src={"/ingenium.png"}
           width={700} // Adjust the width as needed
