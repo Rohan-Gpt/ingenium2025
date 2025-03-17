@@ -10,7 +10,7 @@ export default function Hero() {
     <>
       <HeroParticles />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
-      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-4 lg:mt-0 pt-16 lg:pt-0">
+      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-4 lg:mt-0 md:pt-16">
         {/* <div className="mb-10 inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-sm font-medium tracking-wider uppercase">
           Coming Soon
         </div> */}
@@ -27,8 +27,8 @@ export default function Hero() {
         <p className="text-gray-400 md:text-xl font-bold -mt-1">Presents</p>
         <Image
           src={"/ingenium.png"}
-          width={700} // Adjust the width as needed
-          height={89} // Adjust the height as needed
+          width={700}
+          height={89}
           alt="INGENIUM"
           className="max-w-full h-auto"
         />
