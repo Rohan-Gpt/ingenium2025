@@ -77,7 +77,7 @@ export default function Events() {
     },
     {
       id: 7,
-      title: "Potter Brains",
+      title: "Idea Spark",
       description:
         "Pitch your groundbreaking ideas and turn them into reality with expert feedback.",
       date: "8th & 9th April",
