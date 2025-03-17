@@ -10,8 +10,7 @@ import { Button } from "../ui/button";
 import Image from "next/image";
 
 export default function Hero() {
-  const festivalDate = new Date();
-  festivalDate.setMonth(festivalDate.getMonth() + 3);
+  const festivalDate = new Date("2025-04-08T00:00:00");
   return (
     <>
       <HeroParticles />
@@ -20,6 +19,12 @@ export default function Hero() {
         {/* <div className="mb-10 inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-sm font-medium tracking-wider uppercase">
           Coming Soon
         </div> */}
+        <p className="text-4xl font-black -mb-0">
+          Guru Nanank Institute of Technology
+        </p>
+        <p className="text-2xl font-bold mt-1">
+          Department of Electronics & Computer Science
+        </p>
         <Image
           src={"/ingenium.png"}
           width={700} // Adjust the width as needed

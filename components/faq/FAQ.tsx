@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function FAQ() {
   return (
     <div className="flex justify-center mx-auto">
-      <div className="container px-4 md:px-6">
+      <div className="container px-4 md:px-4">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600/20 to-blue-600/20 text-sm font-medium tracking-wider uppercase text-purple-300 mb-4">
             FAQ
@@ -16,14 +16,14 @@ export default function FAQ() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-screen mx-auto">
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
             <h3 className="text-xl font-medium mb-3">
               When and where is INGENIUM 2025?
             </h3>
             <p className="text-gray-400">
-              INGENIUM 2025 will take place from March 15-17, 2025, at the Tech
-              Convention Center in Silicon Valley, California.
+              INGENIUM 2025 will take place from April 8th to 9th, 2025, at Guru
+              Nanak Institute of Technology, Kolkata.
             </p>
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
@@ -37,11 +37,10 @@ export default function FAQ() {
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
             <h3 className="text-xl font-medium mb-3">
-              Are there accommodation options?
+              Can we participate solo in group events?
             </h3>
             <p className="text-gray-400">
-              Yes, we have partnered with several hotels near the venue to
-              provide discounted rates for INGENIUM attendees.
+              Yes, you can participate in group events as a solo participant.
             </p>
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
@@ -55,11 +54,11 @@ export default function FAQ() {
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
             <h3 className="text-xl font-medium mb-3">
-              How can I participate in the hackathon?
+              How can I participate in the events?
             </h3>
             <p className="text-gray-400">
-              Hackathon registration is included with your ticket. You'll
-              receive details on how to form or join a team closer to the event.
+              You can register for events on the INGENIUM website or at GNIT
+              campus .
             </p>
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">

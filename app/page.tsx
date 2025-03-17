@@ -130,29 +130,29 @@ export default function Home() {
                 </section>
 
                 {/* Speakers Section */}
-                <section
+                {/* <section
                   id="speakers"
                   className="py-24 bg-gradient-to-b from-black to-blue-950/30"
                 >
                   <Speakers />
-                </section>
+                </section> */}
 
                 {/* Registration Section */}
-                <section
+                {/* <section
                   id="register"
                   className="py-24 bg-gradient-to-b from-blue-950/30 to-black relative overflow-hidden"
                 >
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(120,80,255,0.15),transparent_70%)]"></div>
                   <Registration />
-                </section>
+                </section> */}
 
                 {/* Sponsors Section */}
-                <section
+                {/* <section
                   id="sponsors"
                   className="py-24 bg-gradient-to-b from-black to-purple-950/20"
                 >
                   <Sponsors />
-                </section>
+                </section> */}
 
                 {/* FAQ Section */}
                 <section
@@ -163,10 +163,10 @@ export default function Home() {
                 </section>
 
                 {/* Newsletter Section */}
-                <section className="py-24 bg-gradient-to-r from-purple-900/30 to-blue-900/30 relative">
+                {/* <section className="py-24 bg-gradient-to-r from-purple-900/30 to-blue-900/30 relative">
                   <div className="absolute inset-0 bg-black/50"></div>
                   <NewsLetter />
-                </section>
+                </section> */}
 
                 <Footer />
               </motion.div>
