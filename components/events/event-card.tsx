@@ -12,9 +12,12 @@ interface Event {
   id: number;
   title: string;
   description: string;
-  image: string;
+  image?: string;
   date: string;
   category: string;
+  rules?: string[];
+  price: string;
+  link: string;
   isExclusive?: boolean;
   isFeatured?: boolean;
 }
@@ -45,7 +48,7 @@ export function EventCard({ event }: EventCardProps) {
       >
         <div className="aspect-video overflow-hidden">
           <Image
-            src={event.image || "/placeholder.svg"}
+            src={event.image || "/main-poster.png"}
             alt={event.title}
             width={600}
             height={400}

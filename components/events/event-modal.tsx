@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import { Calendar, MapPin, Users, Clock, Tag, X } from "lucide-react";
+import { Calendar, MapPin, Clock, Tag, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
@@ -11,8 +11,11 @@ interface Event {
   id: number;
   title: string;
   date: string;
-  image: string;
+  image?: string;
   description: string;
+  rules?: string[];
+  price: string;
+  link: string;
   attendees?: number;
   category?: string;
 }
@@ -75,7 +78,7 @@ export default function EventModal({
         {/* Hero image */}
         <div className="relative h-64 md:h-80">
           <Image
-            src={event.image || "/tech-quiz.png"}
+            src={event.image || "/main-poster.png"}
             alt={event.title}
             fill
             className="object-cover"
@@ -112,16 +115,12 @@ export default function EventModal({
               </Link>
 
               <div className="flex items-center">
-                <Users className="h-5 w-5 mr-3 text-blue-400" />
-                <span>{event.attendees} people attending</span>
-              </div>
-              <div className="flex items-center">
                 <Clock className="h-5 w-5 mr-3 text-blue-400" />
                 <span>Doors open at 10:00 AM</span>
               </div>
               <div className="flex items-center">
                 <Tag className="h-5 w-5 mr-3 text-blue-400" />
-                <span>From $99</span>
+                <span>{event.price}</span>
               </div>
             </div>
 
@@ -129,7 +128,11 @@ export default function EventModal({
               <p className="text-white mb-4">{event.description}</p>
 
               <div className="flex gap-3">
-                <Button className="flex-1">Register Now</Button>
+                <Link href={event.link} target="_blank">
+                  <Button className="flex-1 cursor-pointer">
+                    Register Now
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
@@ -138,11 +141,9 @@ export default function EventModal({
           <div className="border-t pt-6">
             <h4 className="font-semibold mt-6 mb-2">Rules & Regulations:</h4>
             <ul className="list-disc pl-5 space-y-1 text-gray-400">
-              <li>Keynote presentations from industry leaders</li>
-              <li>Interactive workshops and breakout sessions</li>
-              <li>Networking opportunities with peers and mentors</li>
-              <li>Exhibition area featuring the latest innovations</li>
-              <li>Refreshments and lunch included</li>
+              {event.rules?.map((rule, index) => (
+                <li key={index}>{rule}</li>
+              ))}
             </ul>
           </div>
         </div>

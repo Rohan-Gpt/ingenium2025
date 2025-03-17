@@ -1,12 +1,12 @@
 import Link from "next/link";
-import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram } from "lucide-react";
 
 export function Footer() {
   return (
     <div className="flex justify-center mx-auto border-t border-white/10">
       <footer className="bg-black  py-12">
         <div className="container px-4 md:px-6">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="space-y-4">
               <Link href="/" className="flex items-center gap-2">
                 <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-blue-500">
@@ -22,36 +22,15 @@ export function Footer() {
                   href="#"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
-                  <Twitter className="h-5 w-5" />
-                  <span className="sr-only">Twitter</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
                   <Facebook className="h-5 w-5" />
                   <span className="sr-only">Facebook</span>
                 </Link>
                 <Link
-                  href="#"
+                  href="https://www.instagram.com/ingenium.ecs/"
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   <Instagram className="h-5 w-5" />
                   <span className="sr-only">Instagram</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  <Linkedin className="h-5 w-5" />
-                  <span className="sr-only">LinkedIn</span>
-                </Link>
-                <Link
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  <Github className="h-5 w-5" />
-                  <span className="sr-only">GitHub</span>
                 </Link>
               </div>
             </div>
@@ -109,87 +88,27 @@ export function Footer() {
                 </li>
               </ul>
             </div>
-
-            <div>
-              <h3 className="text-lg font-medium mb-4">Resources</h3>
-              <ul className="space-y-2">
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Schedule
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Venue Map
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Code of Conduct
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Press Kit
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Accommodation
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Travel Info
-                  </Link>
-                </li>
-              </ul>
-            </div>
-
             <div>
               <h3 className="text-lg font-medium mb-4">Contact</h3>
               <ul className="space-y-2">
                 <li className="text-gray-400 text-sm">
-                  Tech Convention Center
+                  157/F, Nilgunj Rd,
                   <br />
-                  123 Innovation Street
+                  Sahid Colony, Panihati, Khardaha,
                   <br />
-                  Silicon Valley, CA 94043
+                  West Bengal 700114
                 </li>
-                <li className="text-gray-400 text-sm pt-2">
+                {/* <li className="text-gray-400 text-sm pt-2">
                   <Link
                     href="mailto:info@ingenium.tech"
                     className="hover:text-white transition-colors"
                   >
                     info@ingenium.tech
                   </Link>
-                </li>
-                <li className="text-gray-400 text-sm">
-                  <Link
-                    href="tel:+1-555-123-4567"
-                    className="hover:text-white transition-colors"
-                  >
-                    +1 (555) 123-4567
-                  </Link>
-                </li>
+                </li> */}
+                <li className="text-gray-400 text-sm">+919830938357</li>
+                <li className="text-gray-400 text-sm">+918617265402</li>
+                <li className="text-gray-400 text-sm">+919123367191</li>
               </ul>
             </div>
           </div>
