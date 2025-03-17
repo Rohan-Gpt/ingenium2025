@@ -1,6 +1,4 @@
-import { ArrowRight } from "lucide-react";
 import { EventCard } from "./event-card";
-import { Button } from "../ui/button";
 
 export default function Events() {
   const events = [
@@ -36,7 +34,7 @@ export default function Events() {
       category: "Only for School Students",
       price: "FREE",
       isFeatured: true,
-      link: "https://forms.gle/k9pKrmf7Fcbf782m8",
+      link: "https://forms.gle/UJqdRVbb5rqpZ7y8A",
     },
     {
       id: 4,
@@ -182,16 +180,6 @@ export default function Events() {
             {events.map((event) => (
               <EventCard key={event.id} event={event} />
             ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <Button
-              size="lg"
-              className="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full py-4 text-lg"
-            >
-              View All Events
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </Button>
           </div>
         </div>
       </div>

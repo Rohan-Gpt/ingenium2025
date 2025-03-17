@@ -56,26 +56,10 @@ export function Footer() {
                 </li>
                 <li>
                   <Link
-                    href="#speakers"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Speakers
-                  </Link>
-                </li>
-                <li>
-                  <Link
                     href="#register"
                     className="text-gray-400 hover:text-white transition-colors text-sm"
                   >
                     Register
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    href="#sponsors"
-                    className="text-gray-400 hover:text-white transition-colors text-sm"
-                  >
-                    Sponsors
                   </Link>
                 </li>
                 <li>
@@ -113,30 +97,10 @@ export function Footer() {
             </div>
           </div>
 
-          <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <div className="border-t border-white/10 mt-12 pt-8 flex flex-col md:flex-row justify-center items-center">
             <p className="text-gray-400 text-sm">
               &copy; INGENIUM {new Date().getFullYear()}. All rights reserved.
             </p>
-            <div className="flex gap-6 mt-4 md:mt-0">
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors text-sm"
-              >
-                Privacy Policy
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors text-sm"
-              >
-                Terms of Service
-              </Link>
-              <Link
-                href="#"
-                className="text-gray-400 hover:text-white transition-colors text-sm"
-              >
-                Cookie Policy
-              </Link>
-            </div>
           </div>
         </div>
       </footer>

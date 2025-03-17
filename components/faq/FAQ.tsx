@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function FAQ() {
   return (
     <div className="flex justify-center mx-auto">
@@ -63,7 +61,7 @@ export default function FAQ() {
           </div>
         </div>
 
-        <div className="mt-12 text-center">
+        {/* <div className="mt-12 text-center">
           <p className="text-gray-400 mb-4">Still have questions?</p>
           <Link
             href="/contact"
@@ -71,7 +69,7 @@ export default function FAQ() {
           >
             Contact our support team →
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
