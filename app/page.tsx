@@ -90,10 +90,8 @@ export default function Home() {
                 {/* Hero Section */}
                 <section
                   id="hero"
-                  className="relative h-screen flex items-center justify-center overflow-hidden pt-10 lg:pt-0"
+                  className="relative h-screen flex items-center justify-center overflow-hidden pt-10"
                 >
-                  <br></br>
-                  <br></br>
                   <Hero />
                 </section>
 

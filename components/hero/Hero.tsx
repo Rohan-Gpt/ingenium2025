@@ -10,7 +10,7 @@ export default function Hero() {
     <>
       <HeroParticles />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
-      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-8 lg:mt-0 pt-16 lg:pt-0">
+      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-4 lg:mt-0 pt-16 lg:pt-0">
         {/* <div className="mb-10 inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-sm font-medium tracking-wider uppercase">
           Coming Soon
         </div> */}
@@ -35,20 +35,22 @@ export default function Hero() {
         <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
           The ultimate celebration of technology, innovation, and creativity
         </p>
-        <CountdownTimer targetDate={festivalDate} />
-        <div className="flex flex-col sm:flex-row gap-4 mt-8">
-          <Button
-            className="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full py-4 text-lg"
-            onClick={(e) => {
-              e.preventDefault();
-              document
-                .querySelector("#events")
-                ?.scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            Register Now
-            <CircleArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+        <div className="mt-10 flex justify-center items-center flex-col">
+          <CountdownTimer targetDate={festivalDate} />
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <Button
+              className="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full py-4 text-lg"
+              onClick={(e) => {
+                e.preventDefault();
+                document
+                  .querySelector("#events")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
+            >
+              Register Now
+              <CircleArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
         </div>
       </div>
       <div className="absolute bottom-8 left-0 right-0 flex justify-center z-20 animate-bounce">
