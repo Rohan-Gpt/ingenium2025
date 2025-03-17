@@ -10,11 +10,13 @@ export default function Hero() {
     <>
       <HeroParticles />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
-      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-8">
+      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-8 lg:mt-0 pt-16 lg:pt-0">
         {/* <div className="mb-10 inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-sm font-medium tracking-wider uppercase">
           Coming Soon
         </div> */}
         <div className="px-4">
+          <br></br>
+          <br></br>
           <p className="text-gray-400 text-3xl md:text-4xl font-black md:-mb-0">
             Guru Nanak Institute of Technology
           </p>

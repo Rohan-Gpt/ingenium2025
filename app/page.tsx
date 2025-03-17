@@ -92,6 +92,8 @@ export default function Home() {
                   id="hero"
                   className="relative h-screen flex items-center justify-center overflow-hidden"
                 >
+                  <br></br>
+                  <br></br>
                   <Hero />
                 </section>
 
