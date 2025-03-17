@@ -16,7 +16,7 @@ export default function Hero() {
         </div> */}
         <div className="px-4">
           <p className="text-gray-400 text-3xl md:text-4xl font-black md:-mb-0">
-            Guru Nanank Institute of Technology
+            Guru Nanak Institute of Technology
           </p>
           <p className="text-xl md:text-2xl font-bold mt-2 md:mt-1">
             Department of Electronics & Computer Science
