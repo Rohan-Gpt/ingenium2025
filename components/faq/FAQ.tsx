@@ -45,11 +45,11 @@ export default function FAQ() {
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
             <h3 className="text-xl font-medium mb-3">
-              Can I get a refund if I can't attend?
+              Where can i get the brochure of the event?
             </h3>
             <p className="text-gray-400">
-              Tickets are refundable up to 30 days before the event. After that,
-              you can transfer your ticket to someone else.
+              The brochure of the event will be available on the INGENIUM
+              website and at GNIT campus.
             </p>
           </div>
           <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
@@ -59,15 +59,6 @@ export default function FAQ() {
             <p className="text-gray-400">
               You can register for events on the INGENIUM website or at GNIT
               campus .
-            </p>
-          </div>
-          <div className="bg-white/5 rounded-xl p-6 hover:bg-white/10 transition-colors duration-300">
-            <h3 className="text-xl font-medium mb-3">
-              Will the talks be recorded?
-            </h3>
-            <p className="text-gray-400">
-              Yes, all keynotes and selected sessions will be recorded and made
-              available to ticket holders after the event.
             </p>
           </div>
         </div>

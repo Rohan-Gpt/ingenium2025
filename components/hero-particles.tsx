@@ -4,9 +4,10 @@ import { useEffect, useRef } from "react";
 
 export function HeroParticles() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
-  const mouse = { x: 0, y: 0 };
 
   useEffect(() => {
+    const mouse = { x: 0, y: 0 }; // Move mouse inside useEffect
+
     const canvas = canvasRef.current;
     if (!canvas) return;
 
@@ -40,8 +41,8 @@ export function HeroParticles() {
       color: string;
 
       constructor() {
-        this.x = Math.random() * canvas.width;
-        this.y = Math.random() * canvas.height;
+        this.x = Math.random() * (canvas?.width || window.innerWidth);
+        this.y = Math.random() * (canvas?.height || window.innerHeight);
         this.size = Math.random() * 3 + 1;
         this.speedX = Math.random() * 1 - 0.5;
         this.speedY = Math.random() * 1 - 0.5;
@@ -79,11 +80,13 @@ export function HeroParticles() {
           this.y += directionY;
         }
 
-        if (this.x > canvas.width) this.x = 0;
-        else if (this.x < 0) this.x = canvas.width;
+        if (canvas) {
+          if (this.x > canvas.width) this.x = 0;
+          else if (this.x < 0) this.x = canvas.width;
 
-        if (this.y > canvas.height) this.y = 0;
-        else if (this.y < 0) this.y = canvas.height;
+          if (this.y > canvas.height) this.y = 0;
+          else if (this.y < 0) this.y = canvas.height;
+        }
       }
 
       draw() {
@@ -133,7 +136,9 @@ export function HeroParticles() {
     // Animation loop
     function animate() {
       if (!ctx) return;
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (canvas) {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+      }
 
       for (let i = 0; i < particlesArray.length; i++) {
         particlesArray[i].update();

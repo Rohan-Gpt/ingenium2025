@@ -1,4 +1,4 @@
-import { Building2, Calendar, MapPin, Mic, Users } from "lucide-react";
+import { Building2, Calendar, MapPin, Users } from "lucide-react";
 import Image from "next/image";
 import { motion } from "motion/react";
 export default function About() {
@@ -14,7 +14,7 @@ export default function About() {
               Where Technology Meets Imagination
             </h2>
             <p className="text-gray-400 text-lg">
-              INGENIUM is more than just a technical festival; it's a
+              INGENIUM is more than just a technical festival; it&apos;s a
               celebration of innovation, creativity, and the future of
               technology. Join us for three days of cutting-edge workshops,
               thrilling competitions, inspiring talks, and networking

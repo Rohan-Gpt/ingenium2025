@@ -32,7 +32,7 @@ export function FloatingElements() {
     ][Math.floor(Math.random() * 3)],
     shape: ["circle", "square", "triangle", "hexagon"][
       Math.floor(Math.random() * 4)
-    ] as any,
+    ] as "circle" | "square" | "triangle" | "hexagon",
   }));
 
   const renderShape = (element: FloatingElement) => {

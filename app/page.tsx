@@ -1,31 +1,13 @@
 "use client";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
-import {
-  ArrowRight,
-  Calendar,
-  ChevronRight,
-  MapPin,
-  Mic,
-  Users,
-} from "lucide-react";
-import { CountdownTimer } from "@/components/countdown-timer";
-import { EventCard } from "@/components/events/event-card";
-import { SpeakerCard } from "@/components/speaker-card";
-import { SponsorShowcase } from "@/components/sponsor-showcase";
 import { Footer } from "@/components/footer";
-import { HeroParticles } from "@/components/hero-particles";
 import Preloader from "@/components/Redirect";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import Hero from "@/components/hero/Hero";
 import About from "@/components/about/About";
 import Events from "@/components/events/Events";
-import Speakers from "@/components/speakers/Speakers";
-import Registration from "@/components/registration/Registration";
-import Sponsors from "@/components/sponsor/Sponsors";
 import FAQ from "@/components/faq/FAQ";
-import NewsLetter from "@/components/newsletter/NewsLetter";
 
 import Image from "next/image";
 

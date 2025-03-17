@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ScrollParallax } from "react-just-parallax";
+// import { ScrollParallax } from "react-just-parallax";
 export const Gradient = () => {
   return (
     <>

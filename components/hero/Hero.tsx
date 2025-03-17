@@ -1,9 +1,4 @@
-import {
-  ArrowRight,
-  ChevronRight,
-  CircleArrowDown,
-  CircleArrowRight,
-} from "lucide-react";
+import { ChevronRight, CircleArrowRight } from "lucide-react";
 import { CountdownTimer } from "../countdown-timer";
 import { HeroParticles } from "../hero-particles";
 import { Button } from "../ui/button";

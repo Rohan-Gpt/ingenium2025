@@ -12,8 +12,8 @@ export default function Registration() {
             Secure Your Spot at INGENIUM 2025
           </h2>
           <p className="text-gray-400 text-lg">
-            Early bird registrations are now open. Don't miss out on the biggest
-            tech festival of the year!
+            Early bird registrations are now open. Don&apos;t miss out on the
+            biggest tech festival of the year!
           </p>
         </div>
 

@@ -1,7 +1,6 @@
 import { ArrowRight } from "lucide-react";
 import { EventCard } from "./event-card";
 import { Button } from "../ui/button";
-import { i } from "motion/react-client";
 
 export default function Events() {
   const events = [
@@ -126,7 +125,7 @@ export default function Events() {
               Featured Events
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-              Discover What's Happening
+              Discover What&apos;s Happening
             </h2>
             <p className="text-gray-400 text-lg">
               From model wars to coding battles, tech quizzes to gaming

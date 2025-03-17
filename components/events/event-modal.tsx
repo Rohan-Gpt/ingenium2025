@@ -2,22 +2,13 @@
 
 import { useEffect } from "react";
 import Image from "next/image";
-import {
-  Calendar,
-  MapPin,
-  Users,
-  Clock,
-  Tag,
-  Share2,
-  Heart,
-  X,
-} from "lucide-react";
+import { Calendar, MapPin, Users, Clock, Tag, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
 interface Event {
-  id: string;
+  id: number;
   title: string;
   date: string;
   image: string;

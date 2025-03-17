@@ -9,7 +9,7 @@ import { motion, useInView } from "motion/react";
 import EventModal from "./event-modal";
 
 interface Event {
-  id: string;
+  id: number;
   title: string;
   description: string;
   image: string;

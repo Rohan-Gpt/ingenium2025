@@ -13,7 +13,7 @@ const Preloader: React.FC<PreloaderProps> = ({
   minLoadingTime = 2000,
   onLoadingComplete,
 }) => {
-  const [loading, setLoading] = useState(true);
+  const [, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => {
