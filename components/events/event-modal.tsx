@@ -86,7 +86,7 @@ export default function EventModal({
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent" />
           <div className="absolute bottom-4 left-4">
-            <Badge className="bg-primary hover:bg-primary/90 text-lg py-1 px-3">
+            <Badge className=" bg-white text-black hover:bg-gray-100 text-lg py-1 px-3">
               Competition
             </Badge>
           </div>
@@ -129,7 +129,7 @@ export default function EventModal({
 
               <div className="flex gap-3">
                 <Link href={event.link} target="_blank">
-                  <Button className="flex-1 cursor-pointer">
+                  <Button className="flex-1 cursor-pointer bg-white text-black hover:bg-gray-100">
                     Register Now
                   </Button>
                 </Link>

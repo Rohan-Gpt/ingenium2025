@@ -3,6 +3,7 @@ import { CountdownTimer } from "../countdown-timer";
 import { HeroParticles } from "../hero-particles";
 import { Button } from "../ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Hero() {
   const festivalDate = new Date("2025-04-08T00:00:00");
@@ -39,7 +40,7 @@ export default function Hero() {
           <CountdownTimer targetDate={festivalDate} />
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
             <Button
-              className="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full py-4 text-lg"
+              className="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full py-5 hover:px-6 text-lg"
               onClick={(e) => {
                 e.preventDefault();
                 document
@@ -50,6 +51,15 @@ export default function Hero() {
               Register Now
               <CircleArrowRight className="ml-2 h-4 w-4" />
             </Button>
+            <Link
+              href={"/event-brochure.pdf"}
+              download="INGENIUM-2k25-Brochure.pdf"
+            >
+              <Button className="cursor-pointer border border-purple-600 text-white rounded-full py-5 px-4 hover:px-6 text-lg transition-all">
+                Download Brochure
+                <CircleArrowRight className="ml-2 h-4 w-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
