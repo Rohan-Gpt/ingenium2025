@@ -52,7 +52,7 @@ export default function Hero() {
               <CircleArrowRight className="ml-2 h-4 w-4" />
             </Button>
             <Link
-              href={"/event-brochure.pdf"}
+              href={"/INGENIUM-2k25-brochure.pdf"}
               download="INGENIUM-2k25-Brochure.pdf"
             >
               <Button className="cursor-pointer border border-purple-600 text-white rounded-full py-5 px-4 hover:px-6 text-lg transition-all">
