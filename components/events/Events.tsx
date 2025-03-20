@@ -1,4 +1,3 @@
-import { image } from "motion/react-client";
 import { EventCard } from "./event-card";
 
 export default function Events() {
