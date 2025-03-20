@@ -13,19 +13,21 @@ export default function Events() {
       isExclusive: true,
       price: "₹250",
       link: "https://forms.gle/T5jVmbz85vkV4vsw6",
+      objectPosition: "center",
     },
     {
       id: 2,
       title: "Striker Arena",
       description: "Showcase your skills and dominate the PES tournament.",
+      image: "/striker-arena.png",
       date: "8th & 9th April",
       category: "Competition",
-      price: "₹301",
+      price: "₹80",
       isExclusive: true,
       link: "https://forms.gle/6xMWit1RLFrCPszt8",
       rules: [
         "MATCH TIME: GROUP STAGE 6 MINS (NO ET + PK); KNOCKOUT STAGE - 8 MINS (ET + PK ON); FINAL - 10 MINS (ET+PK ON) ",
-        "TOURNAMENT TYPE: 3v3 (+1 Sub)",
+        "TOURNAMENT TYPE: 1v1",
         "ALL CARDS ARE ALLOWED.",
         "DURING MATCH IF ANYONE USES FOUL LANGUAGES THE INDIVIDUAL WILL BE SHOWN YELLOW CARD. 2 YELLOW CARD MEANS RED CARD WHICH WILL RESULT IN SUSPENSION FOR 1 MATCH.",
         "EXTERNAL ACCESSORIES LIKE JOYSTICK OR TRIGGER ARE NOT ALLOWED. ",
@@ -41,6 +43,7 @@ export default function Events() {
         "INJURIES: ON ",
         "DECISION OF EVENT HEADS WILL BE FINAL DECISION",
       ],
+      objectPosition: "bottom",
     },
     {
       id: 3,
@@ -60,6 +63,7 @@ export default function Events() {
         "Questions: MCQs, True/False, Fill in the blanks, and Image based.",
         "Fair Play: No external help, gadgets, or discussions during the quiz.",
       ],
+      objectPosition: "centre",
     },
     {
       id: 4,
@@ -78,6 +82,7 @@ export default function Events() {
         "Judge’s Decision will be final decision.",
       ],
       link: "https://forms.gle/J8dpXQH8xEfGZMYq6",
+      objectPosition: "center",
     },
     {
       id: 5,
@@ -98,6 +103,7 @@ export default function Events() {
         "The decision of the judging panel will be final and binding.",
       ],
       link: "https://forms.gle/s9PoM7smQJ1e6HP4A",
+      objectPosition: "center",
     },
     {
       id: 6,
@@ -122,14 +128,14 @@ export default function Events() {
         " In case of a tie in the final round, a rapid-fire tiebreaker will be conducted.",
       ],
       link: "https://forms.gle/k9pKrmf7Fcbf782m8",
+      objectPosition: "center",
     },
     {
       id: 7,
       title: "Idea Spark",
       description:
         "Pitch your groundbreaking ideas and turn them into reality with expert feedback.",
-      image:
-        "/ideaspark.png?height=400&width=600&crop=faces&fit=crop&gravity=top",
+      image: "/ideaspark.png",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹100",
@@ -143,13 +149,14 @@ export default function Events() {
         "Judge’s Decision will be final decision.",
       ],
       link: "https://forms.gle/e4HTc7dHR6Cc1M5y7",
+      objectPosition: "bottom",
     },
     {
       id: 8,
       title: "GrandMaster's Cup",
       description:
         "Outthink and outplay your opponents in this battle of strategy and skill.",
-      image: "/GrandMasters-cup.png?height=400&width=600&gravity=top",
+      image: "/GrandMasters-cup.png",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹50",
@@ -163,6 +170,7 @@ export default function Events() {
         "The decision of the event coordinators will be final.",
       ],
       link: "https://forms.gle/Sf2bW1kqqJ4cR9Ne7",
+      objectPosition: "top",
     },
     {
       id: 9,
@@ -173,6 +181,7 @@ export default function Events() {
       category: "Competition",
       price: "₹100",
       link: "https://forms.gle/yvcaQ3tiXqW8EcxJ8",
+      objectPosition: "bottom",
     },
     {
       id: 10,
@@ -191,6 +200,7 @@ export default function Events() {
         "Organisers reserve the right to make necessary adjustments in real time to ensure the event runs smoothly.",
         "The decision of the event coordinators will be final.",
       ],
+      objectPosition: "center",
     },
     {
       id: 11,
@@ -210,6 +220,7 @@ export default function Events() {
         "Judge’s Decision will be final decision.",
       ],
       link: "https://forms.gle/htxS1VU69h1x39JR8",
+      objectPosition: "center",
     },
     {
       id: 12,
@@ -230,6 +241,7 @@ export default function Events() {
         "Winning depends on finishing the game within the set timeframe.",
         "The overall winner will be determined by the quickest time.",
       ],
+      objectPosition: "bottom",
     },
   ];
 

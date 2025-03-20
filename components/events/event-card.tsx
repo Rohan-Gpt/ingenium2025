@@ -20,6 +20,7 @@ interface Event {
   link: string;
   isExclusive?: boolean;
   isFeatured?: boolean;
+  objectPosition: string;
 }
 
 interface EventCardProps {
@@ -30,6 +31,7 @@ export function EventCard({ event }: EventCardProps) {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-50px 0px" });
+  console.log(event.objectPosition);
 
   return (
     <>
@@ -52,7 +54,7 @@ export function EventCard({ event }: EventCardProps) {
             alt={event.title}
             width={600}
             height={400}
-            className="object-cover w-full h-full group-hover:scale-105 transition-transform duration-300"
+            className={`object-cover w-full h-full group-hover:scale-105 transition-transform duration-300 object-${event.objectPosition}`}
           />
         </div>
         <div className="absolute top-4 right-4">
