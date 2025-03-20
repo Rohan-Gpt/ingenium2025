@@ -1,3 +1,4 @@
+import { image } from "motion/react-client";
 import { EventCard } from "./event-card";
 
 export default function Events() {
@@ -104,7 +105,8 @@ export default function Events() {
       title: "Quizly Bears",
       description:
         "Battle it out in this ultimate tech trivia showdown and prove your knowledge.",
-      image: "/quizlybears.png?height=400&width=600&crop=faces&fit=crop",
+      image:
+        "/quizlybears.png?height=400&width=600&crop=faces&fit=crop&gravity=top",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹50",
@@ -127,6 +129,8 @@ export default function Events() {
       title: "Idea Spark",
       description:
         "Pitch your groundbreaking ideas and turn them into reality with expert feedback.",
+      image:
+        "/ideaspark.png?height=400&width=600&crop=faces&fit=crop&gravity=top",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹100",
@@ -176,6 +180,7 @@ export default function Events() {
       title: "Pool Masters",
       description:
         "Line up your shots, strategize, and become the Pool Master of INGENIUM.",
+      image: "/pool-masters.png?height=400&width=600&crop=faces&fit=crop",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹50",
@@ -193,6 +198,7 @@ export default function Events() {
       title: "Beyond The Frames",
       description:
         "Capture stunning moments and showcase your photography skills to the world.",
+      image: "/beyond-the-frames.png?height=400&width=600&crop=faces&fit=crop",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹50",
