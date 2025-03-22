@@ -75,7 +75,7 @@ export default function Events() {
       category: "Competition",
       price: "₹100",
       rules: [
-        "For each group there should be a maximum of 4 participants",
+        "For each group there should be a maximum of 4 participants and minimum of 1 participant",
         "Participants may present a ppt on their own device if they feel the need for better explanation of the Technical Model.",
         "The team leader from each group will have to register with proper details and no entries will be allowed without registration. .",
         "Proper uniform and ID card is mandatory for all team members. ",
