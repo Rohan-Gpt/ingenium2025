@@ -3,7 +3,7 @@ import { CountdownTimer } from "../countdown-timer";
 import { HeroParticles } from "../hero-particles";
 import { Button } from "../ui/button";
 import Image from "next/image";
-// import Link from "next/link";
+import Link from "next/link";
 
 export default function Hero() {
   const festivalDate = new Date("2025-04-08T00:00:00");
@@ -51,7 +51,7 @@ export default function Hero() {
               Register Now
               <CircleArrowRight className="ml-2 h-4 w-4" />
             </Button>
-            {/* <Link
+            <Link
               href={"/INGENIUM-2k25-brochure.pdf"}
               download="INGENIUM-2k25-Brochure.pdf"
             >
@@ -59,7 +59,7 @@ export default function Hero() {
                 Download Brochure
                 <CircleArrowRight className="ml-2 h-4 w-4" />
               </Button>
-            </Link> */}
+            </Link>
           </div>
         </div>
       </div>
