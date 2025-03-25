@@ -1,3 +1,4 @@
+import { image } from "motion/react-client";
 import { EventCard } from "./event-card";
 
 export default function Events() {
@@ -7,7 +8,7 @@ export default function Events() {
       title: "BGMI Warzone",
       description:
         "Drop in, loot up, and fight for survival in this high-stakes BGMI tournament.",
-      image: "/bgmi.png",
+      image: "/bgmi-new.png",
       date: "8th & 9th April",
       category: "Competition",
       isExclusive: true,
@@ -177,11 +178,12 @@ export default function Events() {
       title: "Verbal Combat",
       description:
         "Engage in intense debates and make your arguments heard in a battle of words.",
+      image: "/verbal-combat.png",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹100",
       link: "https://forms.gle/yvcaQ3tiXqW8EcxJ8",
-      objectPosition: "bottom",
+      objectPosition: "top",
     },
     {
       id: 10,

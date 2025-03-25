@@ -16,7 +16,7 @@ export default function About() {
             <p className="text-gray-400 text-lg">
               INGENIUM is more than just a technical festival; it&apos;s a
               celebration of innovation, creativity, and the future of
-              technology. Join us for three days of cutting-edge workshops,
+              technology. Join us for two days of cutting-edge workshops,
               thrilling competitions, inspiring talks, and networking
               opportunities.
             </p>
