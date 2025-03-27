@@ -228,6 +228,7 @@ export default function Events() {
       title: "Mysterious Hunt",
       description:
         "Solve riddles, uncover clues, and embark on a thrilling treasure hunt adventure.",
+      image: "/mysterious-hunt.png",
       date: "8th & 9th April",
       category: "Competition",
       price: "₹200",
@@ -242,7 +243,7 @@ export default function Events() {
         "Winning depends on finishing the game within the set timeframe.",
         "The overall winner will be determined by the quickest time.",
       ],
-      objectPosition: "bottom",
+      objectPosition: "top",
     },
   ];
 
