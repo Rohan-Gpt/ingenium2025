@@ -10,6 +10,9 @@ import Events from "@/components/events/Events";
 import FAQ from "@/components/faq/FAQ";
 
 import Image from "next/image";
+import Sponsors from "@/components/sponsor/Sponsors";
+import RegistrationClosedDialog from "@/components/resgistration-closed-dialog";
+import RegistrationClosedButton from "@/components/closed-dialog";
 
 export default function Home() {
   // Festival date - set to 3 months from now
@@ -50,7 +53,7 @@ export default function Home() {
               </Link>
 
               <div className="flex items-center space-x-4">
-                <Link
+                {/* <Link
                   href="#events"
                   className="flex items-center bg-white font-semibold text-black px-4 py-1 rounded-lg hover:drop-shadow-lg hover:shadow-white hover:-translate-y-1 transition-all group"
                   onClick={(e) => {
@@ -75,11 +78,13 @@ export default function Home() {
                       d="m12.75 15 3-3m0 0-3-3m3 3h-7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
                     />
                   </svg>
-                </Link>
+                </Link> */}
+                <RegistrationClosedButton />
               </div>
             </motion.div>
           </AnimatePresence>
           <div className="min-h-screen bg-black text-white overflow-hidden">
+            <RegistrationClosedDialog />
             <AnimatePresence>
               <motion.div
                 initial={{ y: 20, opacity: 0 }}
@@ -129,12 +134,12 @@ export default function Home() {
                 </section> */}
 
                 {/* Sponsors Section */}
-                {/* <section
+                <section
                   id="sponsors"
                   className="py-24 bg-gradient-to-b from-black to-purple-950/20"
                 >
                   <Sponsors />
-                </section> */}
+                </section>
 
                 {/* FAQ Section */}
                 <section

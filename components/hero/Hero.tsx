@@ -4,6 +4,7 @@ import { HeroParticles } from "../hero-particles";
 import { Button } from "../ui/button";
 import Image from "next/image";
 import Link from "next/link";
+import RegistrationClosedButton from "../closed-dialog";
 
 export default function Hero() {
   const festivalDate = new Date("2025-04-08T00:00:00");
@@ -11,20 +12,22 @@ export default function Hero() {
     <>
       <HeroParticles />
       <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 z-10"></div>
-      <div className="container relative z-20 px-4 md:px-6 flex flex-col items-center text-center space-y-4 lg:mt-0 md:pt-16">
+      <div className="container relative z-20 px-4 md:px-6 pt-20 flex flex-col items-center text-center space-y-4 lg:mt-0 md:pt-0">
         {/* <div className="mb-10 inline-block px-4 py-1.5 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 text-sm font-medium tracking-wider uppercase">
           Coming Soon
         </div> */}
-        <div className="px-4">
-          <br></br>
-          <br></br>
-          <p className="text-gray-400 text-3xl md:text-4xl font-black md:-mb-0">
-            Guru Nanak Institute of Technology
-          </p>
-          <p className="text-xl md:text-2xl font-bold mt-2 md:mt-1">
-            Department of Electronics & Computer Science
-          </p>
-        </div>
+        <br></br>
+        <br></br>
+        <br></br>
+        <Link href={"https://electrosteel.com"} target="_blank">
+          <Image
+            src={"/electrosteel.png"}
+            width={400}
+            height={89}
+            alt="ElectroSteel"
+          />
+        </Link>
+
         <p className="text-gray-400 md:text-xl font-bold -mt-1">Presents</p>
         <Image
           src={"/ingenium.png"}
@@ -33,13 +36,22 @@ export default function Hero() {
           alt="INGENIUM"
           className="max-w-full h-auto"
         />
-        <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
+        <p className="text-gray-400 md:text-xl font-bold mt-2">Powerd by</p>
+        <div className="px-4">
+          <p className="text-gray-400 text-3xl md:text-4xl font-black md:-mb-0">
+            Guru Nanak Institute of Technology
+          </p>
+          <p className="text-xl md:text-2xl font-bold mt-2 md:mt-1">
+            Department of Electronics & Computer Science
+          </p>
+        </div>
+        {/* <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
           The ultimate celebration of technology, innovation, and creativity
-        </p>
+        </p> */}
         <div className="mt-10 flex justify-center items-center flex-col">
           <CountdownTimer targetDate={festivalDate} />
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <Button
+            {/* <Button
               className="cursor-pointer bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white rounded-full py-5 hover:px-6 text-lg"
               onClick={(e) => {
                 e.preventDefault();
@@ -50,7 +62,8 @@ export default function Hero() {
             >
               Register Now
               <CircleArrowRight className="ml-2 h-4 w-4" />
-            </Button>
+            </Button> */}
+            <RegistrationClosedButton />
             <Link
               href={"/INGENIUM-2k25-brochure.pdf"}
               download="INGENIUM-2k25-Brochure.pdf"

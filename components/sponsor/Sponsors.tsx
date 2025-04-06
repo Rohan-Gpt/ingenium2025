@@ -1,5 +1,5 @@
 import { SponsorShowcase } from "../sponsor-showcase";
-import { Button } from "../ui/button";
+// import { Button } from "../ui/button";
 
 export default function Sponsors() {
   return (
@@ -20,7 +20,7 @@ export default function Sponsors() {
 
         <SponsorShowcase />
 
-        <div className="mt-16 text-center">
+        {/* <div className="mt-16 text-center">
           <p className="text-gray-400 mb-4">
             Interested in becoming a sponsor?
           </p>
@@ -30,7 +30,7 @@ export default function Sponsors() {
           >
             Download Sponsorship Deck
           </Button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
