@@ -17,7 +17,7 @@ export default function CodingCompetitionSection() {
   const quizzoryLink = "https://quizzory.in/id/67d937f0d96869610d6b0d5c";
 
   // Set this to your competition date (YYYY, MM-1, DD, HH, MM, SS)
-  const competitionDate = useMemo(() => new Date(2025, 3, 8, 11, 30, 0), []);
+  const competitionDate = useMemo(() => new Date(2025, 3, 8, 11, 40, 0), []);
 
   useEffect(() => {
     const timer = setInterval(() => {
