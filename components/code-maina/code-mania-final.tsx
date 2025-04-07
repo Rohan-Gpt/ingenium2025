@@ -9,7 +9,6 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
-  Trophy,
   Calendar,
   Clock,
   Users,
@@ -29,7 +28,7 @@ export default function CodeManiaFinal() {
           </Badge>
           <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl">
             CODE MANIA
-            <span className="text-yellow-500"> CHAMPIONSHIP</span>
+            <span className="text-yellow-500">CHAMPIONSHIP</span>
           </h2>
           <p className="max-w-[700px] text-zinc-400 md:text-xl">
             The ultimate test of coding skills, problem-solving, and algorithmic
@@ -98,7 +97,9 @@ export default function CodeManiaFinal() {
               <li>Internet access is restricted to documentation only</li>
               <li>Solutions are evaluated on correctness and efficiency</li>
               <li>Plagiarism will result in immediate disqualification</li>
-              <li>HackerRank's automated proctoring system will be enabled</li>
+              <li>
+                HackerRank&apos;s automated proctoring system will be enabled
+              </li>
             </ul>
           </TabsContent>
           <TabsContent

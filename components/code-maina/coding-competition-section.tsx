@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { motion } from "motion/react";
 import { ChevronRight, Code2, Terminal, Zap } from "lucide-react";
 
@@ -17,7 +17,7 @@ export default function CodingCompetitionSection() {
   const quizzoryLink = "https://quizzory.in/id/67d937f0d96869610d6b0d5c";
 
   // Set this to your competition date (YYYY, MM-1, DD, HH, MM, SS)
-  const competitionDate = new Date(2025, 3, 8, 11, 30, 0);
+  const competitionDate = useMemo(() => new Date(2025, 3, 8, 11, 30, 0), []);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -42,7 +42,7 @@ export default function CodingCompetitionSection() {
     }, 1000);
 
     return () => clearInterval(timer);
-  }, []);
+  }, [competitionDate]);
 
   return (
     <section className="relative overflow-hidden py-20 lg:py-32">
