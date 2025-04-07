@@ -13,6 +13,7 @@ import Image from "next/image";
 import Sponsors from "@/components/sponsor/Sponsors";
 import RegistrationClosedDialog from "@/components/resgistration-closed-dialog";
 import RegistrationClosedButton from "@/components/closed-dialog";
+import CodingCompetitionSection from "@/components/code-maina/coding-competition-section";
 
 export default function Home() {
   // Festival date - set to 3 months from now
@@ -106,6 +107,9 @@ export default function Home() {
                   className="relative py-24 bg-gradient-to-b from-black to-purple-950/30"
                 >
                   <About />
+                </section>
+                <section>
+                  <CodingCompetitionSection />
                 </section>
 
                 {/* Events Section */}

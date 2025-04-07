@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export function SponsorShowcase() {
   return (
-    <div className="space-y-12">
+    <div className="space-y-12 flex flex-col items-center justify-center mx-auto px-4 md:px-6">
       <div className="space-y-4">
         <h3 className="text-center text-lg font-medium text-gray-300">
           Title Sponsor
@@ -76,27 +76,31 @@ export function SponsorShowcase() {
         </div>
       </div>
 
-      {/* <div className="space-y-4">
+      <div className="space-y-4 flex flex-col items-center">
         <h3 className="text-center text-lg font-medium text-gray-300">
-          Silver Sponsors
+          Bronze Sponsors
         </h3>
-        <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
-          {[1, 2, 3, 4, 5, 6].map((i) => (
-            <div
-              key={`silver-${i}`}
-              className="bg-white/5 rounded-xl p-4 flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10"
-            >
-              <Image
-                src="/placeholder-logo.svg"
-                alt={`Silver Sponsor ${i}`}
-                width={100}
-                height={40}
-                className="max-h-8 w-auto"
-              />
-            </div>
-          ))}
+        <div className="grid grid-cols-2 gap-4 justify-center">
+          <div className="bg-white/5 rounded-xl p-4 flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10">
+            <Image
+              src="/siyatech.png"
+              alt="Siyatech"
+              width={200}
+              height={40}
+              className="max-h-8 w-auto"
+            />
+          </div>
+          <div className="bg-white/5 rounded-xl p-4 flex items-center justify-center hover:bg-white/10 transition-colors border border-white/10">
+            <Image
+              src="/tiffin.png"
+              alt="Tiffin"
+              width={200}
+              height={40}
+              className="max-h-8 w-auto"
+            />
+          </div>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
